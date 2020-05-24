@@ -30,23 +30,29 @@ void handleSubmit(){
 	
 	String Motor;
 
-
 	Motor = server.arg("MOTOR"); //Obtenemos el valor de la oagina web 
 
 
 		if ( Motor == "1"){ //La puerta se abre
 		
-  		digitalWrite(motor1Pin1, LOW);
- 		digitalWrite(motor1Pin2, HIGH); 
+  		digitalWrite(Mot1, LOW);
+ 		digitalWrite(Mot2, HIGH); 
   		delay(2000);
+  		digitalWrite(Mot1, LOW);
+ 		digitalWrite(Mot2, LOW); 
 
-	}else if(valor_boton == "0"){ //La puerta se cierra
+	}else if(Motor  == "0"){ //La puerta se cierra
 
-  		digitalWrite(motor1Pin1, HIGH);
-  		digitalWrite(motor1Pin2, LOW); 
+  		digitalWrite(Mot1, HIGH);
+  		digitalWrite(Mot2, LOW); 
   		delay(2000);
+  		digitalWrite(Mot1, LOW);
+ 		digitalWrite(Mot2, LOW);
 
   	}
 
 
 }	
+
+
+
