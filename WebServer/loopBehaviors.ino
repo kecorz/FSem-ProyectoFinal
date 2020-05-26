@@ -20,12 +20,14 @@ void ledProgram()
     Serial.println("Led ON NOW!!!!!!!!!!!");
     digitalWrite(LED1pin, HIGH);
     setLightOn = false;
+    lightsOn = true;
   }
   if (setLightOff && selectedLightOffTime[0] == serverTime[0] && selectedLightOffTime[1] == serverTime[1] && selectedLightOffTime[2] == serverTime[2])
   {
     Serial.println("Led OFF NOW!!!!!!!!!!!");
     digitalWrite(LED1pin, LOW);
     setLightOff = false;
+    lightsOn = false;
   }
 }
 

@@ -1,3 +1,6 @@
+String getHTML();
+String getCamerasHTML();
+
 // Initial connection route:
 void handleOnConnect()
 {
@@ -22,6 +25,13 @@ void handleGarageOpen()
   garageDoorOpen = true;
   Serial.println("Opening garage door");
   server.send(200, "text/html", getHTML());
+}
+
+// Aquí va el comportamiento de las camaras
+void handleCameras()
+{
+  Serial.println("Camera webpage ready!");
+  server.send(200, "text/html", getCamerasHTML());
 }
 
 // Aquí va el comportamiento para cerrar la puerta
@@ -59,7 +69,7 @@ void handleGet()
     String intensity = server.arg("lightIntensity");
     Serial.println("Intensity: " + intensity);
   }
-  Serial.println("Gets here");
+  //Serial.println("Gets here");
   server.send(200, "text/html", getHTML());
 }
 

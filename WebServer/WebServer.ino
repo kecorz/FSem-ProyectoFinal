@@ -122,6 +122,7 @@ void setup()
   server.on("/lightsOff", handleLightsOff);
   server.on("/garageOpen", handleGarageOpen);
   server.on("/garageClose", handleGarageClose);
+  server.on("/cameras", handleCameras);
   server.onNotFound(handleNotFound);
 
   // Begin server:
