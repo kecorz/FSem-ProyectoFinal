@@ -171,6 +171,8 @@ String getHTML()
 
   html += R"(  
           </div>
+        </div>
+        <div class = "row">
           <form action="/get">
             <div class="row">
               <div class="col s12 m6 l4">
