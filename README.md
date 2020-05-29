@@ -1,6 +1,7 @@
 # FSem-ProyectoFinal
 
  Software configuration required to set up a Smart Home Hub with an ESP32 microcontroller.
+ 
  Developed by:
  - Ricardo Hernández Gómez
  - Elda Corella Perez
