@@ -245,7 +245,7 @@ String getHTML()
   if (setLightOff)
   {
     html += String(selectedLightOffTime[0]) + ":";
-    if(selectedLightOnTime[1] < 10){
+    if(selectedLightOffTime[1] < 10){
       html += "0";
     }
     html += String(selectedLightOffTime[1]) + " ";
